@@ -1,0 +1,32 @@
+﻿@model BookStore.Model.Models.Book
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit Book</h2>
+
+<form action="~/Book/Edit" method="post">
+    @Html.ValidationSummary()
+    <div class="form-group">
+        <label>Id</label>
+        <input type="text" class="form-control" name="id" value="@Model.id"/>
+    </div>
+    <div class="form-group">
+        <label>Authors</label>
+        <input type="text" class="form-control" name="authers" value="@Model.authers"/>
+    </div>
+    <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" name="title" value="@Model.title"/>
+    </div>
+    <div class="form-group">
+        <label>Publish Year</label>
+        <input type="text" class="form-control" name="publishYear" value="@Model.publishYear"/>
+    </div>
+    <div class="form-group">
+        <label>Price</label>
+        <input type="text" class="form-control" name="basePrice" value="@Model.basePrice"/>
+    </div>
+    <button class="btn btn-success">Save</button>
+</form>

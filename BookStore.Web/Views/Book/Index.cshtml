@@ -1,0 +1,44 @@
+﻿@model IEnumerable<BookStore.Model.Models.Book>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>All Books</h2>
+<a href="~/Book/Create">Create New</a>
+<br />
+<div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <td>Title</td>
+                <td>Authors</td>
+                <td>Publish Year</td>
+                <td>Price</td>
+                <td>
+                    @*<button class="btn btn-default"><a href="~/Book/Details">Details</a></button>
+                    <button class="btn btn-primary"> <a hrè="">Edit</a></button>
+                    <button class="btn btn-danger"><a href="">Delete</a></button>*@
+
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+            <tr>
+                <td>@item.title</td>
+                <td>@item.authers</td>
+                <td>@item.publishYear</td>
+                <td>@item.basePrice</td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { bookId = item.id }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id }, new { @class = "btn btn-default" })
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+

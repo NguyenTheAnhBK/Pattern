@@ -1,0 +1,37 @@
+﻿@model BookStore.Model.Models.Book
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+
+<h2>Delete Book</h2>
+<div>
+    <div>
+        <b>Id</b>
+        <p>@Model.id</p>
+    </div>
+    <div>
+        <b>Title</b>
+        <p>@Model.title</p>
+    </div>
+    <div>
+        <b>Authors</b>
+        <p>@Model.authers</p>
+    </div>
+    <div>
+        <b>Publish Year</b>
+        <p>@Model.publishYear</p>
+    </div>
+    <div>
+        <b>Price</b>
+        <p>@Model.basePrice</p>
+    </div>
+    <div>
+        @{ using (Html.BeginForm("Delete", "Book", FormMethod.Post))
+            {
+                <button type="submit" class="btn btn-primary" id="btnDelete">Delete</button>
+            }
+        }
+    </div>
+</div>
