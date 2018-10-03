@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace CRUDUseRepository
+namespace BookStore.Web
 {
     public class BundleConfig
     {

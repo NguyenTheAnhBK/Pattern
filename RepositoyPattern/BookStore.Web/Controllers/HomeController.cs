@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace CRUDUseRepository.Controllers
+namespace BookStore.Web.Controllers
 {
     public class HomeController : Controller
     {

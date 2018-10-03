@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CRUDUseRepository")]
+[assembly: AssemblyTitle("BookStore.Web")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CRUDUseRepository")]
+[assembly: AssemblyProduct("BookStore.Web")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ca03c3c2-9217-4a40-b381-fcd654dc169d")]
+[assembly: Guid("8019bcde-9d9f-413d-9a15-a7f475bd8c10")]
 
 // Version information for an assembly consists of the following four values:
 //
